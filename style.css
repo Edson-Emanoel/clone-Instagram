@@ -1,0 +1,188 @@
+/* Variavéis */
+:root {
+      --preto: #000;
+      --branco: #FFF;
+      --azul: #3999FF;
+
+      --cinza-claro: #F4F3F3;
+      --cinza: #E0E0E0;
+      --cinza-medio: #C4C4C4;
+      --cinza-escuro: #979797;
+}
+
+/* Outros */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui;
+}
+
+.container {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+
+.sideImage {
+      flex: 1;
+      height: 100vh;
+}
+
+/* Formulário */
+
+.form {
+      flex: 1;
+      height: 100vh;
+
+      gap: 8px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.form .logo {     
+      margin-bottom: 50px;    
+}
+
+.form input {
+      width: 335px;
+      height: 42px;
+
+      border-radius: 8px;
+      padding-left: 10px;
+
+      border: none;
+      outline: none;
+
+      color: var(--cinza-escuro);
+      background-color: var(--cinza-claro);
+      border: 1px solid var(--cinza);
+}
+
+small.esqueceu {
+      margin-left: 180px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      color: var(--azul);
+      transition: .5s;
+}
+small.esqueceu:hover {
+      font-size: 18px;
+      margin-right: 20px;
+      cursor: pointer;
+
+      color: #1676dd;
+}
+
+.btn {
+      width: 335px;
+      height: 42px;
+
+      border-radius: 8px;
+      padding-left: 10px;
+
+      border: none;
+      outline: none;
+
+      margin-bottom: 20px;
+
+      color: var(--branco);
+      background-color: var(--azul);
+      transition: .5s;
+}
+
+.btn:hover {
+      cursor: pointer;
+
+      background-color: #1676dd;
+}
+
+span.continuar {
+      gap: 5px;
+      display: flex;
+      align-items: center;
+
+      color: var(--azul);
+
+      cursor: pointer;
+      margin-bottom: 20px;
+}
+
+/* " Footer " */
+.divOu {
+      gap: 15px;
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 20px;
+}
+
+.linha {
+      width: 140px;
+      height: 5px;
+
+      background-color: var(--cinza);
+      border-radius: 8px;
+}
+
+span.ou {
+      color: var(--cinza);
+}
+
+.conta {
+      color: var(--cinza-escuro);
+}
+
+.conta strong {
+      color: var(--azul);
+      cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 1975px) {
+      .sideImage {
+            width: 1850px;
+            height: 100vh;
+      }
+}
+
+@media screen and (max-width: 1920px) {
+      .sideImage {
+            width: 850px;
+            height: 100vh;
+      }
+}
+
+@media screen and (max-width: 1310px) {
+      .sideImage {
+            width: 650px;
+            height: 100vh;
+      }
+}
+
+@media screen and (max-width: 1070px) {
+      .sideImage {
+            width: 450px;
+            height: 100vh;
+      }
+}
+
+@media screen and (max-width: 985px) {
+      .sideImage {
+            width: 250px;
+            height: 100vh;
+      }
+}
+
+@media screen and (max-width: 815px) {
+      .sideImage {
+            display: none;
+      }
+}
